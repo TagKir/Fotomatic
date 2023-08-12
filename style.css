@@ -1,0 +1,99 @@
+/* All */
+
+/* Header */
+header {
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+  top: 0;
+  left: 0;
+  display: flex;
+  border: 1px solid black;
+  height: 85px;
+  width: 100%;
+  align-items: center;
+}
+header a {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+.logo {
+  margin-right: auto;
+  margin-left: 30px;
+  font-size: 24px;
+  font-family: "Roboto Mono";
+}
+
+header ul li {
+  display: inline-flex;
+  font-size: 16px;
+  font-family: "Roboto";
+  line-height: 1.6;
+  margin-right: 30px;
+}
+.icon {
+  margin-bottom: -2px;
+  width: 16px;
+}
+
+/* Main */
+
+/* SingUp section */
+#SingUp {
+  margin-top: 85px;
+  width: 100%;
+  height: 696px;
+  background-image: url("images/banner-landingpage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#SingUpDiv {
+  position: relative;
+  background-color: #9dc20a;
+  color: white;
+  border: 1px solid #979797;
+  border-radius: 4px;
+  text-align: center;
+  left: 100px;
+  top: 100px;
+  display: inline-block;
+}
+
+.cursive {
+  font-family: "Damion", cursive;
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+#format {
+  margin-top: 0;
+  font-size: 50px;
+  font-family: "Rubik";
+  line-height: 1.4;
+  margin-bottom: 12px;
+}
+#email {
+  margin-top: 0px;
+  font-size: 20px;
+  font-family: "Roboto";
+  line-height: 1.4;
+  margin-bottom: 26px;
+  margin-left: 10px;
+  max-width: 500px;
+}
+button {
+  width: 408px;
+  height: 68px;
+  background-color: #4a4a4a;
+  border-radius: 4px;
+  margin: 0px 80px 56px 80px;
+}
+#join {
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Footer */
