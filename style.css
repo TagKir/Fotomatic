@@ -47,6 +47,7 @@ header ul li {
   width: 100%;
   height: 696px;
   background-image: url("images/banner-landingpage.jpg");
+  background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -54,6 +55,8 @@ header ul li {
 #SingUpDiv {
   position: relative;
   background-color: #9dc20a;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white;
   border: 1px solid #979797;
   border-radius: 4px;
@@ -90,7 +93,20 @@ button {
   background-color: #4a4a4a;
   border-radius: 4px;
   margin: 0px 80px 56px 80px;
+  border: 1px solid #4a4a4a;
+  cursor: pointer;
+  box-shadow: 8px 8px rgba(255, 255, 255, 0.5);
+  transition: box-shadow 0.5s ease-out, transform 0.08s ease-out;
 }
+button:hover {
+  background-color: rgb(55, 55, 55);
+  box-shadow: none;
+}
+button:active {
+  background-color: #2e2e2e;
+  transform: scale(0.9) translateY(10%);
+}
+
 #join {
   color: white;
   font-size: 20px;
@@ -102,24 +118,28 @@ button {
 #Features {
   display: flex;
   text-align: center;
-  justify-content: center;
 }
 #Features article {
+  flex: 1;
+  flex-direction: column;
   margin-top: 64px;
-  height: 635px;
-  width: 628px;
   background-color: white;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 32px;
+  padding-top: 33vi;
+  padding-bottom: 3vi;
 }
 #Features #Fcamera {
+  background-image: url("images/feature-1.png");
   margin-right: 19px;
+  margin-left: 38px;
 }
 #Features #Scamera {
+  background-image: url("images/feature-2.png");
   margin-left: 19px;
-}
-#Features img {
-  height: 65%;
-  width: auto;
-  margin: 32px 32px 40px 32px;
+  margin-right: 38px;
 }
 #Features h2,
 #Features h3 {
@@ -137,7 +157,8 @@ button {
   font-weight: 300;
 }
 #Features #Scamera h3 {
-  margin: 0 100px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 #Filters {
@@ -206,4 +227,70 @@ footer .copyright {
 }
 footer .location {
   margin-right: 32px;
+}
+@media screen and (max-width: 768px) {
+  header ul li {
+    margin-right: 10px;
+  }
+  button,
+  #email {
+    display: none;
+  }
+  #SingUp {
+    height: 448px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #SingUpDiv {
+    position: static;
+    background-color: transparent;
+    border: none;
+  }
+  #Features {
+    display: inline;
+  }
+  #Features #Fcamera {
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+  #Features #Scamera {
+    margin-top: 30px;
+    margin-left: 0;
+    margin-bottom: 60px;
+  }
+  #Features article {
+    width: 100%;
+  }
+  #Features h2 {
+    padding-top: 36vi;
+  }
+}
+@media screen and (min-width: 490px) {
+  #navv {
+    display: none;
+  }
+}
+@media screen and (max-width: 490px) {
+  header > a,
+  header #navvv {
+    display: none;
+  }
+  header #navv {
+    width: 100%;
+  }
+  header #navv ul li {
+    margin-left: 15%;
+  }
+  header #navv ul #li1 {
+    margin-left: 0;
+  }
+  header #navv ul #joinus {
+    background-color: #9dc20b;
+    padding: 2px 5px;
+    border-radius: 5px;
+  }
+  header #navv ul #joinus span {
+    color: white;
+  }
 }
