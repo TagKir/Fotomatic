@@ -228,7 +228,7 @@ footer .copyright {
 footer .location {
   margin-right: 32px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px), (orientation: portrait) {
   header ul li {
     margin-right: 10px;
   }
@@ -266,12 +266,12 @@ footer .location {
     padding-top: 36vi;
   }
 }
-@media screen and (min-width: 490px) {
+@media screen and (orientation: landscape) {
   #navv {
     display: none;
   }
 }
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 490px), (orientation: portrait) {
   header > a,
   header #navvv {
     display: none;
@@ -280,7 +280,7 @@ footer .location {
     width: 100%;
   }
   header #navv ul li {
-    margin-left: 15%;
+    margin-left: 18%;
   }
   header #navv ul #li1 {
     margin-left: 0;
